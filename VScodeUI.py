@@ -6,6 +6,7 @@ import tempfile
 import os
 
 st.title("Welcome To Your Legal Document Analyzer")
+st.write("test")
 st.write("This application will help you analyze legal documents and provide insights based on the content.")
 communication_style=st.text_input("Please enter the style of communication you'd like to use:")
 description=st.text_input("Describe the problem or thing you'd like to review in the document:")
@@ -53,4 +54,5 @@ Give a detailed description of the solution to this problem in an elaborate mann
 """
     text1=model.generate_content([prompt])
     st.write(text1.text)
+
 
